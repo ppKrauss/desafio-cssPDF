@@ -1,4 +1,4 @@
-# Exemplo-1 em português
+# Exemplo-1
 
 Exemplos do tutorial pré-histórico para sacar de onde vem o HTML e porque certas coisas funcionam.
 

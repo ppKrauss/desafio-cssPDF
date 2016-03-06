@@ -1,0 +1,10 @@
+# PROCEDIMENTO DE CRIACAO:
+
+ rm *.png
+ cp ../*.png .
+ mogrify *.png -negate *.png
+ mogrify *.png -colorize 5,21,25 *.png
+
+
+# testes isolados com 
+convert abstract.png -negative lixo.png

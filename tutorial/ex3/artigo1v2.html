@@ -9,7 +9,8 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>doc peter</title>
-	<link rel="stylesheet" type="text/css" href="css/teteNeo_v1.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/SJATS_xcolor.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/teteNeo_v1.css" media="print"/>
 </head>
 
 <body>
@@ -21,6 +22,9 @@
 	<p class="abstract" lang="pt" data-langconf="1"><span class="c7">Documentos legislativos e artigos científicos têm seu depósito permanente e seu livre acesso garantidos por grandes repositórios digitais, tais como o LexML para legislação e o SciELO para artigos científicos. São repositórios </span><span class="c7 c1">Open Access</span><span class="c7">, em que o ato de registro já  pressupõe uma licença aberta. Para quem espera fazer pleno uso do documento (ler, entender, reusar e redistribuir), todavia, o direito de acesso expresso pela licença pode ser insuficiente; o mesmo direito precisaria ser observado nos anexos, figuras e tabelas, assim como nos documentos citados – leis citam normas técnicas e outras leis, artigos citam outros artigos. </span><span class="c7">Essa dependência cria demanda por uma licença igualmente aberta no objeto de que depende</span><span class="c7">. Documentos com licenças abertas idealmente não teriam restrições de acesso nas suas dependências: esse é o princípio em que repousa o conceito proposto de </span><span class="c7 c1">OpenCoherence</span><span class="c7"> (coerência da licença</span><span class="c7"> </span><span class="c7">um documento com as licenças das suas dependências).</span></p>
 	<p class="abstract" lang="pt" data-langconf="1"><span class="c7">Uma </span><span class="c7">métrica baseada no </span><span class="c7 c1">ranking</span><span class="c7"> do </span><span class="c7">grau de abertura</span><span class="c7"> das licenças é proposta, para se definir o grau de abertura de um documento e o grau médio de um conjunto de documentos. Estratégias de agregação e classificação das licenças também são apresentadas. Em seguida, com fundamento nas métricas de abertura, são sugeridas métricas de </span><span class="c7 c1">OpenCoherence </span><span class="c7">baseadas na análise das dependências</span><span class="c7">.</span></p>
 	<p class="abstract" lang="pt" data-langconf="1"><span class="c7">Alguns resultados preliminares do projeto </span><span class="c7 c1">OpenCoherence</span><span class="c7"> são também apresentados. Uma série de documentos dos repositórios está sendo selecionada a título de amostragem e de evidência dos problemas levantados; experimentos com algoritmos de análise estão sendo realizados.</span></p>
+
+	<hr/>
+
 	<p class="secTitle1"><a name="h.nwgpyi5i6ve6"/><span>Introdução</span></p>
 	<p class="body"><span>Nas últimas décadas, a defesa por um modelo livre de conhecimento, o ativismo e iniciativas por maior transparência nos governos e na gestão da produção científica, vêm crescendo e se consolidando. Documentos legislativos e artigos científicos são exemplos típicos de expressão do conhecimento, milhões desses documentos</span><sup>(45)</sup><span> são mantidos hoje, com efeito de depósito legal</span><sup>(1,57)</sup><span> e sem barreiras de acesso, em grandes </span><span class="c1">repositórios digitais</span><span>:</span></p>
 <ul type="disc">
@@ -62,7 +66,7 @@
 	<li class="c11 c18"><span>Caracterizar do grau de abertura de grandes repositórios, por varredura completa ou amostragem.</span></li>
 </ul>
 	<p class="secTitle1"><a name="h.bseyd3lsixr6"/><span>Organização do projeto</span></p>
-	<p class="fig"><img alt="uml_tables.png" class="fig" src="es/image05.png"/></p>
+	<p class="fig"><img alt="uml_tables.png" class="fig" src="images/image05.png"/></p>
 	<p class="body"><span>O projeto </span><span class="c1">OpenCoherence</span><span> encontra-se em andamento, com alguns aspectos estruturais já finalizados, tais como a organização dos dados e arquitetura de alguns módulos.</span></p>
 	<p class="body"><span>Os principais </span><span class="c1">datasets</span><sup>(13)</sup><span> </span><span>do projeto </span><span>são:</span></p>
 <ul type="disc">
@@ -107,7 +111,7 @@
 	<p class="secTitle3"><a name="h.7yt74rc2fh1b"/><span>Famílias de licenças</span><span> </span></p>
 	<p class="body"><span>Apesar da tendência à padronização das licenças, existe ainda uma grande diversidade a ser gerenciada. O agrupamento de licenças similares em “famílias de licenças” ajuda a reduzir essa diversidade e simplificar o processo de interpretação das diferentes licenças.</span></p>
 	<p class="body"><span>Uma forma usual de agrupamento é em torno dos </span><span class="c1">mantenedores</span><span> das licenças; p</span><span>or exemplo grupo da  </span><span class="c1">Free Software Foundation </span><span>(AGPL, GFDL, GPL, e LGPL). Todavia, tais agrupamentos não reúnem licenças de mesmo comportamento contratual, podendo ser caracterizados apenas como marcas (</span><span class="c1">branding</span><span>).</span></p>
-	<p class="fig"><img alt="canonicas-v2c.png" src="es/image04.png"/></p>
+	<p class="fig"><img alt="canonicas-v2c.png" src="images/image04.png"/></p>
 	<p class="body"><span>O que se destaca nos estudos e discussões sobre licenças, é a similaridade contratual. No </span><span class="c1">dataset licenses</span><sup>(57)</sup><span>cada licença é caracterizada por um conjunto de atributos de presença/ausência das cláusulas mais comuns:  </span><span class="c1">is_by</span><span> (atribuição), </span><span class="c1">is_sa</span><span> (share-alike), </span><span class="c1">is_nc</span><span> (não-comercial) e outras. Por procedimentos básicos de taxonomia numérica, esses atributos podem gerar agrupamentos, denominados aqui de </span><span class="c1">famílias de licença</span><span>.</span></p>
 	<p class="body"><span>Como em agrupamentos linguísticos e biológicos,</span><sup>(46)</sup><span> convencionou-se no projeto eleger dentre os membros de cada grupo um representante, dito canônico. Cada família é representada em geral por uma licença mais popular</span><span>,</span><sup>(43)</sup><span> e o nome da família obtido de simplificação do nome dessa </span><span class="c1">licença canônica</span><span>. Exemplos:</span><sup>(50)</sup></p>
 <ul type="disc">
@@ -116,7 +120,7 @@
 	<li class="c27 c11 c18"><span>Família </span><span class="c1 c13">cc-by-sa</span><span>: CC-BY-SA-v2, CC-BY-SA-v3, CC-BY-SA-v4, ODbL-v1.0.</span></li>
 </ul>
 	<p class="body"><span>A família </span><span class="c1">copyright0 </span><span>corresponde às licenças fixadas pelas cláusulas do Tratado de Berna,</span><sup>(49)</sup><span> tomando-se o de 1979 como referência. A família </span><span class="c1">copyright-pay</span><span> ao caso em que o usuário só tem acesso mediante pagamento.</span></p>
-	<p class="fig"><span><img alt="open2d.png" src="es/image02.png"/></span></p>
+	<p class="fig"><span><img alt="open2d.png" src="images/image02.png"/></span></p>
 	<p class="secTitle2"><a name="h.4a0f1byx2zwq"/><span>Grau de abertura de uma licença</span></p>
 	<p class="body"><span>As famílias podem ser ordenadas num </span><span class="c1">ranking</span><span>, da menos aberta à mais aberta, como ilustrado na Fig.1. Cada nível do </span><span class="c1">ranking</span><span> pode ser associado a uma quantidade determinante do </span><span class="c1">grau de abertura</span><span>. Essa determinação numérica é uma convenção arbitrária, sendo </span><span class="c1">degreeV1 </span><span>(ilustrado) e </span><span class="c1">degreeV2 </span><span>as duas convenções testadas pelo projeto.</span></p>
 	<p class="body"><span>A caracterização do</span><span> grau de abertura</span><span> de um documento pode ser formalizada com o apoio da tabela de licenças, através do seguinte procedimento:</span></p>
@@ -126,7 +130,7 @@
 	<li class="c11 c18"><span>obter o  “grau de abertura" da tabela de famílias, conforme a </span><span class="c1">degreeVersion</span><span> adotada.</span></li>
 </ol>
 	<p class="captionBlw">Legenda fig abaixo</p>
-	<p class="fig"><span><img alt="Ordering_of_Creative_Commons_licenses_from_most_to_least_open-redAny-2.png" src="es/image06.png"/></span></p>
+	<p class="fig"><span><img alt="Ordering_of_Creative_Commons_licenses_from_most_to_least_open-redAny-2.png" src="images/image06.png"/></span></p>
 	<p class="body"><span>O </span><span class="c1">ranking</span><span> das famílias de licenças tem certa afinidade com o grafo de compatibilidade de D.A. Wheeler</span><sup>(14)</sup><span> mas o enfoque da abertura no presente projeto é dado apenas pela compatibilidade de acesso</span><span>.</span></p>
 	<p class="body"><span>Na convenção </span><span class="c1">degreeV2</span><span>,</span><span class="c1"> </span><span>adotou-se um peso maior para as licenças aceitas como abertas pela </span><span class="c1">Open Definition</span><span> (região verde na Fig.2), atribuindo-se valores entre 50 e 100 às mais abertas, entre 0 e 15 às menos abertas.</span><sup>(41)</sup><span>  Adotou-se também uma subdivisão das famílias, para contemplar a diferenciação das licenças, indicadas por (*) na Fig.2, que apresentam cláusulas adicionais aceitáveis, como previsto pela seção "</span><span class="c1">2.2 Acceptable Conditions</span><span>" da </span><span class="c1">Open Definition</span><span>.</span></p>
 	<p class="body"><span>Para utilização em algoritmos ou fórmulas matemáticas do grau de abertura, podemos adotar os seguintes símbolos e convenções:</span></p>
@@ -260,7 +264,7 @@
 	<p class="body"><span>Os resultados estão sendo mantidos e atualizados em ambiente </span><span class="c1">git</span><span> colaborativo:  </span><span class="c9"><a class="c0" href="https://www.google.com/url?q=https://github.com/ppKrauss/openCoherence&amp;sa=D&amp;ust=1454358941069000&amp;usg=AFQjCNHkTvIr8-JwCSu4Ep-whNo5oNU0gw">https://github.com/ppKrauss/openCoherence</a></span><span>.</span></p>
 	<p class="secTitle2"><a name="h.b9bmps3zkza6"/><span>Licenças e </span><span class="c1">rankings</span></p>
 	<p class="body"><span>Partindo-se do </span><span class="c1">dataset</span><span> oferecido pela </span><span class="c1">Open Definition</span><sup>(11)</sup><span> uma tabela mais completa foi construída, garantindo que todas as licenças tenham sua família (coluna </span><span class="c1">family</span><span>) definida.  </span><span>As tabelas ilustradas abaixo exemplificam a caracterização das licenças mais conhecidas, e da atribuição de grau de abertura nas famílias, conforme as convenções de </span><span class="c1">degreeV1 </span><span>ou </span><span class="c1">degreeV2</span><span>.</span></p>
-	<p class="fig"><span><img alt="licencas_e_familias-v2.png" src="es/image01.png"/></span></p>
+	<p class="fig"><span><img alt="licencas_e_familias-v2.png" src="images/image01.png"/></span></p>
 	<p class="body"><span>As</span><span> famílias com sufixo “-*” são aquelas que diferem ligeiramente da familia similar, por apresentarem alguma outra cláusula adicional aceitável (conforme seção "</span><span class="c1">2.2 Acceptable Conditions</span><span>" da </span><span class="c1">Open Definition</span><span>), afetando minimamente o seu grau de abertura.</span></p>
 	<p class="body"><span>As famílias podem ainda ser agregadas em “escopos”, que são pontos de vista adotados por comunidades distintas. A comunidade DOAJ</span><sup>(55)</sup><span> considera a maior parte das licenças CC como </span><span class="c1">Open Access</span><span> (</span><span class="c1">oa</span><span>), enquanto que a comunidade Open Knowledge optou por remover da sua </span><span class="c1">Open Definition</span><span> (</span><span class="c1">od</span><span>) as licenças que levam cláusulas NC e ND </span><sup>(41)</sup><span>  (ex.CC-BY-NC, e CC-BY-ND).</span></p>
 	<p class="body"><span>No quadro a seguir, é apresentado em mais detalhe o processo e justificativas para as convenções fixadas ainda experimentalmente no projeto, </span><span class="c1">degreeV1</span><span> e </span><span class="c1">degreeV2</span><span>, incluindo também os critérios para a representação vetorial (separação nos três escopos).  </span></p>
@@ -282,7 +286,7 @@
 	<p class="c14 c18"><span class="c25 c4 c12">   95 &gt; 80 &gt; 75  &gt; 60 &gt; 55   &gt;&gt;  15  &gt; 13   &gt; 10 &gt; 8</span></p>
 	<p class="c24"><span class="c4">A estratégia nos exemplos 2 e 3 foi impor uma barreira quantitativa entre os grupos distintos de famílias – aqui apelidados de “escopo”, e associados a </span><span class="c4 c1">open definition</span><span class="c4"> (escopo “od”),  </span><span class="c4 c1">open access </span><span class="c4">(escopo “oa”) e </span><span class="c4 c1">restrict </span><span class="c4">(escopo “</span><span class="c4">rt</span><span class="c4 c1">”</span><span class="c25 c4 c35">). </span></p>
 	<p class="c24"><span class="c4">Essa “barreira quantitativa” entre escopos pode perder seu significado quando </span><span class="c4">fazemos a média para caracterizar o grau de um </span><span class="c4">conjunto de licenças. Casso esse conjunto contenha casos extremos, a média geral e o desvio padrão não informam da existência desses extremos. Para resolver esse probema, e mais importante do que mostrar o desvio padrão, é mostrar junto com a média geral os valores de participação a cada escopo: a representação do resultado em um vetor de escopo, </span><span class="c4 c1 c13">[od; oa; rt]</span><span class="c25 c4 c35">, resolve o problema. As projeções são pares percentual-grau, e seu módulo é a média ponderada dos graus.</span></p>
-	<p><img alt="matrizPesosDegreeV2.png" src="es/image03.png"/></p>
+	<p><img alt="matrizPesosDegreeV2.png" src="images/image03.png"/></p>
 	<p class="c24"><span class="c4">Por fim, para um melhor ajuste e justificativa na escolha dos valores de abertura de cada família, foi desenvolvida uma metodologia de cálculo com base na percepção do público, similar à metodologia </span><span class="c4 c1">OAspectrum</span><sup>(58)</sup><span class="c25 c4 c35">. Ao invés de se arbirarem valores para as famílias, elegem-se um valor referência (100) para CC0 e valores de penalidade para as restrições (BY, SA, NC, * e ND). Para se garantir a diferenciação de escopo, “NC ou ND” representam um salto (penalidade -50). A planilha acima mostra os cálculos realizados. Os valores da primeira linha devem cumprir simultaneamente três ajustes: a ordem, os saltos entre escopos, e a percepção de peso.</span></p>
 </td>
 		</tr>
@@ -292,7 +296,7 @@
 	<p class="body"><span>Foram explorados algoritmos para recuperação automática de grandes quantidades de documentos (XML) dos repositórios SciELO, PubMed Central e LexML, e N-Lex. As análises prospectivas se concentraram nos repositórios nacionais, SciELO-BR e LexML.  A descrição do preparo dos dados e dos resultados ainda se encontra em construção, e exigiria um relatório separado.</span></p>
 	<p class="secTitle2"><a name="h.wtny19ezw069"/><span>Experimentos ilustrativos</span></p>
 	<p class="body"><span>Para saber qual a licença de cada documento, de forma automatizada e em regime de </span><span class="c1">big data</span><sup>(48)</sup><span>, as tabelas são inseridas em banco de dados (foi utilizado PostgreSQL 9.3) juntamente com os demais dados.  </span></p>
-	<p class="fig"><span><img alt="tabela2b_dados.png" src="es/image08.png"/></span></p>
+	<p class="fig"><span><img alt="tabela2b_dados.png" src="images/image08.png"/></span></p>
 	<p class="body"><span>Exemplo de análise simples de licenças, usando convenção </span><span class="c1">degreeV1</span><span> (grauV1) para métrica de grau de abertura. São listados artigos de 5 revistas (4 delas com acervo completo).</span></p>
 	<p class="body"><span>A tabela foi obtida com a seguinte consulta SQL, </span></p>
 	<p class="body"><span class="c21 c12">SELECT count(*) as n_docs,  </span></p>
@@ -309,7 +313,7 @@
 	<p class="body"><span>Se o repositório fosse composto por apenas as revistas amostradas (ver tabela acima), o repositório teria um total de 2048 artigos e um grau de abertura dado por </span></p>
 	<p class="body"><span class="c1">od</span><span>(repo)  = 3,1       ou       [33% </span><span class="c1">od 6</span><span>;</span><span> 66% </span><span class="c1">oa 4</span><span>]</span></p>
 	<p class="body"><span>A forte proximidade desse resultado geral com o valor 3 se explica pela diretiva da SciELO em se adotar </span><span class="c1">licenças default</span><sup>(56)</sup><span> nos documentos onde originalmente os autores não haviam indicado nenhum tipo de licença.</span></p>
-	<p class="body"><span><img alt="" src="es/image07.png"/></span></p>
+	<p class="body"><span><img alt="" src="images/image07.png"/></span></p>
 	<p class="body"><span>Num levantamento realizado junto à SciELO-BR, resumido na tabela ao lado, podemos notar a forte dominância das licenças BY-NC (grau de abertura 3).</span></p>
 	<p class="body"><span>Fazendo uso dessa tabela também podemos estimar o grau de abertura geral do repositório SciELO-BR:</span></p>
 	<p class="body"><span class="c1">od</span><span>(scieloBR)  = 0.83*3 + 0.14*6 + 0.03*1 = 3,4       ou      [</span><span class="c7">14% </span><span class="c7 c1">od</span><span class="c1"> 6,0</span><span>;</span><span> </span><span class="c7">86% </span><span class="c7 c1">oa</span><span class="c1"> 2,9</span><span>]</span></p>
@@ -317,7 +321,7 @@
 	<p class="body"><span>Uma análise similar foi realizada sobre as revistas certificadas do diretório OpenAccess, DOAJ.</span><sup>(55)</sup><span> Das 5302 revistas com o selo, 5196 revistas declararam licenças conhecidas: 50% apresentaram licença da família CC-BY, 2% família CC-BY-SA, ou seja, 52% (2702 revistas) apresentaram licenças </span><span class="c1">Open Definition</span><span>. No restante: 22% CC-BY-NC-ND, ~19% CC-BY-NC, 6% CC-BY-NC-SA, 1% CC-BY-ND, o que permite inferir</span></p>
 	<p class="body"><span class="c1">od</span><span>(DOAJ Seal)  =</span><span class="c4"> 6*0,5 + 5*0,02 + 1*0,22 + 3*0,19 + 2*0,06 + 4*0,01 </span><span>= 4,1     ou     [</span><span class="c7">53% </span><span class="c7 c1">od </span><span class="c1">5,9</span><span>;  </span><span class="c7">47% </span><span class="c7 c1">oa </span><span class="c1">2</span><span class="c1">,0</span><span>]</span></p>
 	<p class="body"><span>A média geral demonstra que o SciELO-BR tem grau de abertura (3,4) inferior à média DOAJ Seal (4,1). A caracterização vetorial mostra que a causa é a fraca participação de </span><span class="c1">OD</span><span> (</span><span class="c1">Open Definition</span><span>). </span></p>
-	<p class="body"><span><img alt="" src="es/image00.png"/></span></p>
+	<p class="body"><span><img alt="" src="images/image00.png"/></span></p>
 	<p class="body"><span>Na ilustração ao lado os mesmos resultados são apresentados com apoio de uma representação pictórica alternativa, que também faz parte do desenvolvimento do projeto, para garantir que as caracterizações e comparações sejam auto-evidentes para o usuário final.</span></p>
 	<p class="body"><span>A apresentação dos resultados relativos à coerência de abertura seguiriam convenções similares e compatíveis com estas. Quanto à métrica, está sendo abandonada a </span><span class="c1">degreeV1</span><span> (ilustrações) para se assumir uma </span><span class="c1">degreeV2</span><span> muito próxima da apresentada.</span></p>
 	<p class="secTitle1"><a name="h.tnmwndrn9j4r"/><span>Trabalhos futuros e desdobramentos</span></p>

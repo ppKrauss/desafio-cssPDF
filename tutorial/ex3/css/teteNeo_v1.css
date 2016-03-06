@@ -41,7 +41,7 @@
 }
 
 b {
-  color: #003366;
+  color: #663300;
 }
 
 p.secTitle1 {
@@ -49,7 +49,7 @@ p.secTitle1 {
   padding: 50px 20px 0px 10px;
   color: #003366;
   font-family: Helvetica;
-  font-size: 14pt;
+  font-size: 18pt;
   font-weight: bold;
   font-style: normal;
   line-height: 140%;
@@ -59,7 +59,7 @@ p.secTitle2 {
   padding: 20px 20px 0px 10px;
   color: #003366;
   font-family: Helvetica;
-  font-size: 13pt;
+  font-size: 14pt;
   font-weight: bold;
   font-style: normal;
   line-height: 140%;

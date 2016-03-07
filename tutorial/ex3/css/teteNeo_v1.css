@@ -130,6 +130,13 @@ p.secTitle4 {
     font-variant: small-caps;
 }
 
+img.fig-dir {
+    max-width: 260px;
+}
+img.fig-center {
+    max-width: 600px;
+}
+
 p {
   text-align: letf;
   padding: 10px 0px 10px 10px;

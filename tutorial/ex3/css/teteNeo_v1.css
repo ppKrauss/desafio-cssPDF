@@ -3,35 +3,34 @@ body{
   margin-bottom: 25px;
   margin-right: 25px;
   margin-left: 30px; 
-  
   text-align: left;
-  
   font-family: Times;
   font-size: 12pt;
   line-height: 1.3;
   font-color: black; 
+  padding: 0cm 0cm 0cm 0cm;
 }
-
-p.subject {
+p.body {
+  text-indent: 25px;
+  padding: 0px 0px 0px 0px;
+}
+.subject {
   font-family: Helvetica;
   font-style: bold;
   font-size: 10.5pt;
   font-color: #202020; 
-  padding: 0cm 0cm 2cm 0cm
+  padding: 0cm 0cm 2cm 0cm;
 }
 
-p.title {
+.title {
   font-family: Helvetica;
   font-style: bold;
   font-size: 20pt;
   font-color: #202020; 
-  padding: 0cm 0cm 2cm 0cm
+  padding: 0cm 0cm 2cm 0cm;
 }
 
-.c1 {
-   font-style: italic;
-}
-p.contrib {
+.contrib {
   font-family: Helvetica;
   font-style: bold;
   font-size: 12pt;
@@ -39,14 +38,14 @@ p.contrib {
   padding: 0cm 0cm 0cm 6cm
 }
 
-p.aff {
+.aff {
   font-family: Helvetica;
   font-style: normal;
   font-size: 10pt;
   font-color: #202020; 
-  padding: 0cm 0cm 0cm 6cm
+  padding: 0cm 0cm 0cm 6cm;
 }
-p.abstract {
+.abstract {
   font-size: 10.5pt;
 }
 
@@ -55,31 +54,35 @@ p.abstract {
   font-style: bold;
   font-color: #202020; 
 }
+.c1 {
+   font-style: italic;
+}
+
 li {
-  font-size: 11pt;
+  font-size: 10.5pt;
 }
 
-p.secTitle1 {
+.secTitle1 {
   font-family: Helvetica;
-  font-size: 15pt;
+  font-size: 16pt;
   font-style: bold;
   font-color: #202020; 
-  padding: 1.5cm 0cm 0cm 0cm
+  padding: 1.5cm 0cm 0cm 0cm;
 }
 
-p.secTitle2 {
+.secTitle2 {
   font-family: Helvetica;
-  font-size: 13pt;
+  font-size: 14pt;
   font-style: bold;
   font-color: #202020; 
-  padding: 0.5cm 0cm 0cm 0cm
+  padding: 0.5cm 0cm 0cm 0cm;
 }
-p.secTitle3 {
+.secTitle3 {
   font-family: Helvetica;
-  font-size: 12pt;
+  font-size: 12.5pt;
   font-style: bold;
   font-color: #202020; 
-  padding: 0.5cm 0cm 0cm 0cm
+  padding: 0.5cm 0cm 0cm 0cm;
 }
 .captionBlw {
   font-family: Helvetica;
@@ -107,7 +110,18 @@ tr:nth-child(even){background-color: #E0E0E0}
   background-color: #202020;
     color: white;
 }
+.ref {
+  font-family: Helvetica;
+  font-style: bold;
+  font-size: 10.5pt;
+  font-color: #202020; 
+  }
 
+.biblio {
+  font-size: 10.5pt;
+  text-indent: -25px;
+  padding: 0px 0px 0px 25px;
+}
 img.fig-dir {
     max-width: 260px;
 }

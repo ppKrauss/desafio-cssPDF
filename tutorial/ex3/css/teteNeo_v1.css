@@ -7,7 +7,7 @@ body{
   font-family: Times;
   font-size: 12pt;
   line-height: 1.3;
-  font-color: black; 
+  font color: black; 
   padding: 0cm 0cm 0cm 0cm;
 }
 p.body {
@@ -18,7 +18,7 @@ p.body {
   font-family: Helvetica;
   font-style: bold;
   font-size: 10.5pt;
-  font-color: #202020; 
+  font color: #202020; 
   padding: 0cm 0cm 2cm 0cm;
 }
 
@@ -26,7 +26,7 @@ p.body {
   font-family: Helvetica;
   font-style: bold;
   font-size: 20pt;
-  font-color: #202020; 
+  font color: #202020; 
   padding: 0cm 0cm 2cm 0cm;
 }
 
@@ -34,7 +34,7 @@ p.body {
   font-family: Helvetica;
   font-style: bold;
   font-size: 12pt;
-  font-color: #202020; 
+  font color: #202020; 
   padding: 0cm 0cm 0cm 6cm
 }
 
@@ -42,7 +42,7 @@ p.body {
   font-family: Helvetica;
   font-style: normal;
   font-size: 10pt;
-  font-color: #202020; 
+  font color: #202020; 
   padding: 0cm 0cm 0cm 6cm;
 }
 .abstract {
@@ -52,10 +52,10 @@ p.body {
 .c13 {
   font-family: Helvetica;
   font-style: bold;
-  font-color: #202020; 
+  font color: #202020; 
 }
 .c1 {
-   font-style: italic;
+  font-style: italic;
 }
 
 li {
@@ -66,7 +66,7 @@ li {
   font-family: Helvetica;
   font-size: 16pt;
   font-style: bold;
-  font-color: #202020; 
+  font color: #202020; 
   padding: 1.5cm 0cm 0cm 0cm;
 }
 
@@ -74,14 +74,14 @@ li {
   font-family: Helvetica;
   font-size: 14pt;
   font-style: bold;
-  font-color: #202020; 
+  font color: #202020; 
   padding: 0.5cm 0cm 0cm 0cm;
 }
 .secTitle3 {
   font-family: Helvetica;
   font-size: 12.5pt;
   font-style: bold;
-  font-color: #202020; 
+  font color: #202020; 
   padding: 0.5cm 0cm 0cm 0cm;
 }
 .captionBlw {
@@ -93,7 +93,7 @@ li {
 table {
     border-collapse: collapse;
     width: 100;
-    heigh: 100;
+    height: 100;
     font-family: Helvetica;
     font-size: 8pt;
     background-color: #C0C0C0;

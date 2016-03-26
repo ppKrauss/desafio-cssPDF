@@ -9,4 +9,7 @@ O Tutorial foi organizado em exemplos.
 
 * [ex1](ex1)
 * ...
+* 
+
+Para navegar diretamente nos exemplos (não no seu código-fonte) use http://yellowtown.org/desafio-cssPDF/
 

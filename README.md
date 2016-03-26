@@ -6,9 +6,18 @@ O uso de recursos CSS para documentos paginados ([CSS-page](http://www.w3.org/TR
 Essa foi a conclusão de [uma discussão na lista okfn-br@lists.okfn.org](http://open-knowledge-foundation-brasil-rede-pelo-conhecimento-livre.50579.x6.nabble.com/okfn-br-dados-abertos-burilados-num-PDF-tt4121.html), que  motivou 
 o presente desafio aos webdesigners e experts em ferramentas de diagramação de PDF, partindo apenas de *HTML+CSS*.
 
-Dois arquivos de HTML exemplificam conteúdos típicos para a diagramação,
-* `atividades-MEI.htm` apresenta tabelas, seções e índices. Requer apresentação compacta.
-* `almanaque-OKBr.htm` apresenta artigos de blog simples a serem diagramados na forma de revista.
+Arquivos de HTML que exemplificam conteúdos típicos para a diagramação,
+
+* Documentos sem padrão de referência:
+ * **Livros**: ...
+   * `thesis.htm`: ref. [yeslogic/prince-samples](https://github.com/yeslogic/prince-samples/tree/master/thesis)
+ * **Catálogos**: 
+   * `atividades-MEI.htm` apresenta tabelas, seções e índices. Requer apresentação compacta. 
+   * `PrinceCatalogue.htm`: ref. [princexml.com/samples/catalog](http://www.princexml.com/samples/catalog/PrinceCatalogue.html)
+
+* Documentos baseados em padrão de referência:
+ * Documentos científicos, padrão **HTML-SJTAS**: *HTML Simple [JATS](https://en.wikipedia.org/wiki/Journal_Article_Tag_Suite)*
+ * Documentos legislativos, padrão **HTML-SLexML** e **HTML-PMSPretranca**: *HTML Simple [LexML](https://en.wikipedia.org/wiki/LexML_Brasil)* e "[Diário Oficial da PMSC marcado com retrancas](http://devcolab.each.usp.br/do/)"
 
 Na pasta `css` encontra-se um exemplo de CSS de referências, para destacar o mínimo de "efeitos de diagramação", típicos de *CSS-page*, que se espera conseguir usar.
 

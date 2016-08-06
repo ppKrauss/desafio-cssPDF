@@ -1,5 +1,8 @@
 Desafio-cssPDF
 ==============
+
+(avaliando tradução e merge com [print-css.rocks](https://print-css.rocks/intro.html))
+
 <small>Concurso para "melhor visual e diagramação" de PDF obtido de HTML+CSS puro</small>
 
 O uso de recursos CSS para documentos paginados ([CSS-page](http://www.w3.org/TR/CSS21/page.html)) ainda é pouco difundido,  assim como as ferramentas que lidam com esses recursos na geração de PDF. 
